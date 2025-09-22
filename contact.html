@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRL Technologies - Contact</title>
+<link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+/* Contact Form Styles */
+.contact-section .form-control, 
+.contact-section .form-select {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-section .form-control:focus, 
+.contact-section .form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+  outline: none;
+}
+
+.contact-section .form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-section .form-check-label {
+  color: #555;
+}
+
+.contact-section .btn-primary {
+  background: #007bff;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.contact-section .btn-primary:hover {
+  background: #0056b3;
+}
+
+.contact-section .btn-success {
+  background: #28a745;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.contact-section .btn-success:hover {
+  background: #1e7e34;
+}
+
+.contact-section .invalid-feedback {
+  font-size: 0.875rem;
+}
+</style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <img src="srl-logo.svg" alt="SRL Technologies Logo" />
+      <span>text</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="services.html">Service</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Query</a></li>
+        <li><a href="carrers.html">Join Us</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+  </div>
+</header>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="heading text-center">
+      <h2>Contact <span>Us</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>
+         incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <div class="title">
+          <h3>Contact detail</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+        </div>
+        <div class="content">
+          <div class="info">
+            <i class="fas fa-mobile-alt"></i>
+            <h4 class="d-inline-block">PHONE :<br>
+              <span>+12457836913 , +12457836913</span></h4>
+          </div>
+          <div class="info">
+            <i class="far fa-envelope"></i>
+            <h4 class="d-inline-block">EMAIL :<br>
+              <span>example@info.com</span></h4>
+          </div>
+          <div class="info">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4 class="d-inline-block">ADDRESS :<br>
+              <span>6743 last street , Abcd, Xyz</span></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-7">
+        <!-- Contact Form -->
+        <form class="row g-3 needs-validation" id="contactForm" novalidate>
+          <div class="col-md-4">
+            <label class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" required>
+            <div class="invalid-feedback">Please provide first name.</div>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" required>
+            <div class="invalid-feedback">Please provide last name.</div>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" required>
+            <div class="invalid-feedback">Please choose a username.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">City</label>
+            <input type="text" class="form-control" id="city" required>
+            <div class="invalid-feedback">Please provide a valid city.</div>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label">State</label>
+            <select class="form-select" id="state" required>
+              <option selected disabled value="">Choose...</option>
+              <option>Uttar Pradesh</option>
+              <option>Delhi</option>
+              <option>Rajasthan</option>
+              <option>Other</option>
+            </select>
+            <div class="invalid-feedback">Please select a valid state.</div>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label">Zip</label>
+            <input type="text" class="form-control" id="zip" required>
+            <div class="invalid-feedback">Please provide a valid zip.</div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="agreeCheck" required>
+              <label class="form-check-label" for="agreeCheck">Agree to terms and conditions</label>
+              <div class="invalid-feedback">You must agree before submitting.</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+           
+          </div>
+           <a href="view.html" class="btn btn-success">See Enquiries</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-col">
+      <div class="footer-logo">
+        <img src="srl-logo.svg" alt="SRL Technologies Logo" />
+        <span>Text</span>
+      </div>
+      <p style="color:#e9edef;">127 L.I.G., Ratan Lal Nagar, Kanpur – 208 022<br>
+      info@srltechnologies.com</p>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Service</a></li>
+        <li><a href="contact.html">Query</a></li>
+        <li><a href="join.html">Join Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+
+  </div>
+      <!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+  <div class="footer-bottom">
+    © 2025 SRL Technologies. All rights reserved.
+  </div>
+</footer>
+<script>
+(async function () {
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      form.classList.add('was-validated');
+      return;
+    }
+
+    const entry = {
+      first: document.getElementById('firstName').value,
+      last: document.getElementById('lastName').value,
+      user: document.getElementById('username').value,
+      city: document.getElementById('city').value,
+      state: document.getElementById('state').value,
+      zip: document.getElementById('zip').value
+    };
+
+    try {
+      const res = await fetch('http://localhost:3000/api/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(entry)
+      });
+      if (res.ok) {
+        alert('✅ Enquiry saved successfully!');
+        form.reset();
+        form.classList.remove('was-validated');
+      }
+    } catch (err) {
+      alert('❌ Failed to save enquiry.');
+      console.error(err);
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+const express = require("express");
+const fs = require("fs");
+const cors = require("cors");
+
+const app = express();
+const PORT = 3000;
+const FILE = "data.json";
+
+app.use(cors());
+app.use(express.json());
+
+// Load data
+function readData() {
+  if (!fs.existsSync(FILE)) return [];
+  return JSON.parse(fs.readFileSync(FILE));
+}
+
+// Save data
+function writeData(data) {
+  fs.writeFileSync(FILE, JSON.stringify(data, null, 2));
+}
+
+// Get all entries
+app.get("/api/data", (req, res) => {
+  res.json(readData());
+});
+
+// Save entry
+app.post("/api/save", (req, res) => {
+  const data = readData();
+  data.push(req.body);
+  writeData(data);
+  res.json({ message: "Saved!" });
+});
+
+app.listen(PORT, () => {
+  console.log(`✅ Server running on http://localhost:${PORT}`);
+});

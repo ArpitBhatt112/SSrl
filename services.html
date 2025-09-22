@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+    
+   
+
+    body {
+      background: #f8f9fb;
+      color: #333;
+    }
+
+    /* Section */
+    .services {
+      padding: 50px 10%;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      font-weight: 700;
+      color: #222;
+    }
+
+    /* Grid Layout */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    /* Service Card */
+    .service-card {
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .service-card i {
+      font-size: 40px;
+      color: #007bff;
+      margin-bottom: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .service-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .service-card a {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-card:hover i {
+      color: #0056b3;
+    }
+
+    .service-card a:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <img src="srl-logo.svg" alt="SRL Technologies Logo" />
+      <span>text</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="services.html" class="active">Service</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Query</a></li>
+        <li><a href="carrers.html">Join Us</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+  </div>
+</header>
+
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+
+      <!-- Web Development -->
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>We build fast, secure, and responsive websites using modern technologies like React, Node.js, and Next.js.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <!-- Mobile App Development -->
+      <div class="service-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Mobile App Development</h3>
+        <p>Native and cross-platform apps that provide seamless user experiences on Android and iOS devices.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <!-- UI/UX Design -->
+      <div class="service-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>UI/UX Design</h3>
+        <p>Beautiful, user-friendly, and interactive designs that keep your customers engaged and satisfied.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <!-- Digital Marketing -->
+      <div class="service-card">
+        <i class="fas fa-bullhorn"></i>
+        <h3>Digital Marketing</h3>
+        <p>Boost your brand visibility with SEO, social media campaigns, content marketing, and paid ads.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <!-- Cloud Solutions -->
+      <div class="service-card">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud Solutions</h3>
+        <p>Scalable cloud infrastructure, DevOps, and migration services tailored to your business needs.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <!-- AI & ML Solutions -->
+      <div class="service-card">
+        <i class="fas fa-robot"></i>
+        <h3>AI & ML Solutions</h3>
+        <p>Leverage artificial intelligence and machine learning to automate workflows and drive insights.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-col">
+      <div class="footer-logo">
+        <img src="srl-logo.svg" alt="SRL Technologies Logo" />
+        <span>Shree RAMA LAXMI Technologies</span>
+      </div>
+      <p style="color:#e9edef;">127 L.I.G., Ratan Lal Nagar, Kanpur – 208 022<br>
+      info@srltechnologies.com</p>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Service</a></li>
+        <li><a href="contact.html">Query</a></li>
+        <li><a href="join.html">Join Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+
+  </div>
+      <!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+  <div class="footer-bottom">
+    © 2025 SRL Technologies. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
